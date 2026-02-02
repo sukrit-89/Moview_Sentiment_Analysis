@@ -2,14 +2,16 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16.1-orange?logo=tensorflow&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?logo=streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 **A deep learning project that analyzes movie reviews and predicts sentiment using Recurrent Neural Networks (RNN)**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Model Architecture](#-model-architecture) • [Examples](#-examples)
+🚀 **[Try the Live Demo](https://moviesentimient.streamlit.app/)** 🚀
+
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Model Architecture](#-model-architecture) • [Examples](#-examples) • [Live Demo](#-live-demo)
 
 </div>
 
@@ -42,7 +44,7 @@ The project includes:
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.12 (recommended for TensorFlow 2.16.1 compatibility)
 - pip package manager
 
 ### Setup Instructions
@@ -70,27 +72,40 @@ The project includes:
 
 4. **Install required dependencies**
    ```bash
-   pip install tensorflow numpy streamlit
+   pip install -r requirements.txt
    ```
+   
+   Or manually:
+   ```bash
+   pip install tensorflow==2.16.1 numpy==1.26.4 streamlit
+   ```
+
+---
+
+## 🌐 Live Demo
+
+**Try the app now without any installation:**
+
+👉 **[https://moviesentimient.streamlit.app/](https://moviesentimient.streamlit.app/)** 👈
+
+**How to use:**
+1. Enter your movie review in the text area
+2. Click the "Classify" button
+3. View the sentiment prediction and confidence score
 
 ---
 
 ## 💻 Usage
 
-### Option 1: Web Application (Streamlit)
+### Option 1: Web Application (Local Streamlit)
 
-Launch the interactive web interface:
+Launch the interactive web interface locally:
 
 ```bash
 streamlit run main.py
 ```
 
 Then open your browser and navigate to the displayed local URL (typically `http://localhost:8501`).
-
-**How to use:**
-1. Enter your movie review in the text area
-2. Click the "Classify" button
-3. View the sentiment prediction and confidence score
 
 ### Option 2: Jupyter Notebooks
 
